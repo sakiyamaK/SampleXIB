@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="bLY-OK-feW" customClass="XIB1Cell" customModule="SampleXIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bLY-OK-feW" id="Yry-Kc-8JY">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiW-FP-fpb">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QiW-FP-fpb" secondAttribute="height" multiplier="1:1" id="ub6-Q7-4nq"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXH-yh-9TO">
+                        <rect key="frame" x="120" y="0.0" width="294" height="110"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QiW-FP-fpb" secondAttribute="bottom" id="YkF-Xu-DpH"/>
+                    <constraint firstItem="MXH-yh-9TO" firstAttribute="leading" secondItem="QiW-FP-fpb" secondAttribute="trailing" constant="10" id="dlE-sb-fR2"/>
+                    <constraint firstAttribute="bottom" secondItem="MXH-yh-9TO" secondAttribute="bottom" id="hc1-aF-uKC"/>
+                    <constraint firstItem="QiW-FP-fpb" firstAttribute="leading" secondItem="Yry-Kc-8JY" secondAttribute="leading" id="khv-hH-HKq"/>
+                    <constraint firstAttribute="trailing" secondItem="MXH-yh-9TO" secondAttribute="trailing" id="q4M-Ds-sld"/>
+                    <constraint firstItem="MXH-yh-9TO" firstAttribute="top" secondItem="Yry-Kc-8JY" secondAttribute="top" id="t5P-MZ-9MU"/>
+                    <constraint firstItem="QiW-FP-fpb" firstAttribute="top" secondItem="Yry-Kc-8JY" secondAttribute="top" id="yl0-rg-83i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label1" destination="MXH-yh-9TO" id="HSd-gI-JN1"/>
+                <outlet property="view1" destination="QiW-FP-fpb" id="biS-18-7mw"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="-25.446428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
